@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Audi RS6 — всё о легендарном универсале</title>
+  <meta name="description" content="История, характеристики и фото Audi RS6. Поколения, двигатель, дизайн, галерея." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #151822;
+      --text: #e8ecf1;
+      --muted: #9aa3ad;
+      --accent: #d2042d; /* RS-акцент */
+      --line: #232735;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    a { color: var(--text); text-decoration: none; }
+    .container { max-width: 1080px; margin: 0 auto; padding: 24px; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid var(--line); }
+    .logo { display: flex; gap: 12px; align-items: center; }
+    .logo .mark { width: 12px; height: 12px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 24px rgba(210,4,45,.5); }
+    .logo h1 { margin: 0; font-size: 20px; font-weight: 700; letter-spacing: .4px; }
+    nav { display: flex; gap: 16px; }
+    nav a { color: var(--muted); font-weight: 600; }
+    nav a:hover { color: var(--text); }
+    .hero {
+      display: grid; grid-template-columns: 1.2fr .8fr; gap: 24px; padding: 28px 0;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0)) , var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px; padding: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.25);
+    }
+    .card h2 { margin: 0 0 10px; font-size: 22px; }
+    .card p { margin: 8px 0; color: var(--muted); line-height: 1.6; }
+    .specs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 12px; }
+    .spec { padding: 12px; border: 1px solid var(--line); border-radius: 10px; background: #121420; }
+    .spec .k { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .6px; }
+    .spec .v { margin-top: 6px; font-weight: 700; font-size: 16px; }
+    .badge { display: inline-block; background: #121420; border: 1px solid var(--line); padding: 6px 10px; border-radius: 999px; font-size: 12px; color: var(--muted); }
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .img-card { position: relative; overflow: hidden; border-radius: 12px; border: 1px solid var(--line); background: #0c0e15; }
+    .img-card img { display: block; width: 100%; height: 180px; object-fit: cover; filter: saturate(110%); transition: transform .3s ease, filter .3s ease; }
+    .img-card:hover img { transform: scale(1.05); filter: saturate(120%); }
+    .img-card .cap {
+      position: absolute; left: 0; right: 0; bottom: 0; padding: 10px 12px;
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.6) 60%, rgba(0,0,0,.8) 100%);
+      color: #cdd3db; font-size: 12px;
+    }
+    .section { margin: 30px 0; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .gen { border: 1px solid var(--line); border-radius: 12px; padding: 14px; background: #121420; }
+    footer { margin: 28px 0; padding: 20px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    .btn {
+      display: inline-flex; gap: 10px; align-items: center;
+      background: var(--accent); color: white; padding: 10px 14px; border-radius: 10px; font-weight: 700; border: none; cursor: pointer;
+      box-shadow: 0 8px 24px rgba(210,4,45,.35);
+    }
+    .btn:active { transform: translateY(1px); }
+    .source { color: var(--muted); font-size: 12px; margin-top: 8px; }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: 1fr 1fr; }
+      .specs { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark"></div>
+        <h1>Audi RS6</h1>
+      </div>
+      <nav>
+        <a href="#overview">Обзор</a>
+        <a href="#specs">Характеристики</a>
+        <a href="#generations">Поколения</a>
+        <a href="#gallery">Галерея</a>
+      </nav>
+    </header>
+
+    <section id="overview" class="hero">
+      <div class="card">
+        <h2>Обзор модели</h2>
+        <p>
+          Audi RS6 — высокопроизводительный универсал, сочетающий мощность, практичность и технологии.
+          Современные версии предлагают гибридизированные V8, полный привод quattro и адаптивные системы
+          управления шасси. Первая RS6 была представлена в 2002 году и с тех пор модель прошла несколько
+          заметных обновлений по части мощности, дизайна и электронных ассистентов.
+        </p>
+        <div class="source">Историческая справка и особенности см. в источниках на странице.</div>
+        <div style="margin-top: 14px; display: flex; gap: 10px;">
+          <a class="btn" href="#gallery">Смотреть фото</a>
+          <span class="badge">Avant • V8 • Quattro</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Ключевые моменты</h2>
+        <ul style="margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.7;">
+          <li>Практичный кузов Avant с акцентом на динамику и комфорт.</li>
+          <li>Мощные турбо-V8 с гибридной поддержкой, быстрая откликаемость.</li>
+          <li>Продвинутая электроника: адаптивная подвеска, режимы управления, ассистенты.</li>
+          <li>Тормозные системы повышенной эффективности, спортивные элементы интерьера.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="specs" class="section card">
+      <h2>Технические характеристики (пример)</h2>
+      <p>Ниже — примерные параметры актуальной RS6 Avant. Подставь точные цифры под нужный год/комплектацию.</p>
+      <div class="specs">
+        <div class="spec"><div class="k">Двигатель</div><div class="v">4.0 TFSI V8, mild-hybrid</div></div>
+        <div class="spec"><div class="k">Мощность</div><div class="v">около 600 л.с.</div></div>
+        <div class="spec"><div class="k">Привод</div><div class="v">quattro (полный)</div></div>
+        <div class="spec"><div class="k">Разгон 0–100</div><div class="v">~3.6–3.7 с</div></div>
+        <div class="spec"><div class="k">КПП</div><div class="v">8-ступ. автомат</div></div>
+        <div class="spec"><div class="k">Тормоза</div><div class="v">усиленные, карбон-керамика опционально</div></div>
+      </div>
+      <p class="source">Примечание: проверь точные цифры под конкретный год/рынок, затем обнови блок.</p>
+    </section>
+
+    <section id="generations" class="section">
+      <div class="grid-2">
+        <div class="gen">
+          <h3>Поколения RS6</h3>
+          <p style="color: var(--muted);">
+            RS6 развивалась от первой версии (2002 г.) через несколько поколений, каждое усиливало мощность,
+            шасси и электронные системы, а также уникальный стиль Avant.
+          </p>
+          <ul style="margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.6;">
+            <li>C5 (2002–2004): дебют RS6, V8 битурбо.</li>
+            <li>C6 (2008–2010): V10 битурбо, заметный рывок в производительности.</li>
+            <li>C7 (2013–2018): возвращение к V8 битурбо, широкая электроника.</li>
+            <li>C8 (с 2019): 4.0 TFSI V8 mild-hybrid, актуальные ассистенты и динамика.</li>
+          </ul>
+        </div>
+        <div class="gen">
+          <h3>Чем выделяется Avant</h3>
+          <p style="color: var(--muted);">
+            Универсал Avant сохраняет практичность багажника и посадки, при этом предлагает динамику спорткара:
+            широкая колея, выраженные арки, активные элементы аэродинамики и настраиваемые режимы.
+          </p>
+          <p class="source">Подробности см. в источниках и официальных материалах.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section card">
+      <h2>Галерея</h2>
+      <p>Подставь прямые ссылки на изображения. Для авторских фото укажи атрибуцию и проверь права.</p>
+      <div class="gallery" id="gallery-grid">
+        <!-- Заполняется скриптом ниже -->
+      </div>
+      <p class="source">Совет: используй изображения с разрешением не ниже 1920×1080 для четкости.</p>
+    </section>
+
+    <footer>
+      <div>© Твой сайт про Audi RS6. Информация носит справочный характер. Уважай авторские права на изображения.</div>
+    </footer>
+  </div>
+
+  <script>
+    // Пример списка изображений с подписями и источниками
+    const images = [
+      {
+        url: "https://images.unsplash.com/photo-1549921296-3c2b0b7b6611?q=80&w=1600&auto=format&fit=crop",
+        caption: "RS6 Avant — динамика и практичность",
+        credit: "Фото: Unsplash (пример)"
+      },
+      {
+        url: "https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1600&auto=format&fit=crop",
+        caption: "Детали экстрерьера RS-линиии",
+        credit: "Фото: Unsplash (пример)"
+      },
+      {
+        url: "https://images.unsplash.com/photo-1537041374827-cb4d2f30e79a?q=80&w=1600&auto=format&fit=crop",
+        caption: "Интерьер с акцентом на спорт",
+        credit: "Фото: Unsplash (пример)"
+      }
+      // Добавь свои ссылки: JPEG/PNG/GIF из публичных источников
+    ];
+
+    const grid = document.getElementById('gallery-grid');
+    images.forEach(({ url, caption, credit }) => {
+      const card = document.createElement('div');
+      card.className = 'img-card';
+      card.innerHTML = `
+        <img src="${url}" alt="${caption}">
+        <div class="cap">
+          <div>${caption}</div>
+          <div style="opacity:.8">${credit}</div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>
